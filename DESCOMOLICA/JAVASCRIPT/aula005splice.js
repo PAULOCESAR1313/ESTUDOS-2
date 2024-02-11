@@ -14,3 +14,8 @@ var novos = nome.splice(1, 2, "Thayanne", "Joaquim");
 
 console.log(novos);
 console.log(nome);
+
+var arr2 = [13, 14, 15,16, 18];
+
+arr2.splice(3, 2);
+console.log(arr2);
