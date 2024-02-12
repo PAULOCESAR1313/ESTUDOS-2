@@ -1,7 +1,7 @@
 let pratcsync = require('readline-sync');
 
-let Nome =pratcsync.question("Qual o seu nome:\n");
-console.log(`Olá, ${Nome}`);
+let Nome =pratcsync.question("Digite seu nome:\n");
 
-let Idade =pratcsync.question("Qual a sua idade:\n");
-console.log(`Sua idade é:\n ${Idade}`);
+let sobreNome =pratcsync.question("Digite seu sobre nome:\n");
+
+console.log(`Olá\n ${Nome} ${sobreNome}`);
