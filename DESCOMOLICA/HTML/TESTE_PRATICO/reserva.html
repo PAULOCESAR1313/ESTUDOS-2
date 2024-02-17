@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVA DE VIAGEM</title>
+</head>
+<body>
+    <section>
+        <h2>
+            ORÇAMENTO
+        </h2>
+        <div class="conteiner_form">
+            <form action="" method="get">
+                <fieldset>
+                    <legend>DADOS PESSOAIS</legend>
+                    <label for="iNome">Nome</label><br>
+                    <input type="text" name="Nome" id="iNome" required><br><br>
+                    <label for="iContato">Celular</label><br>
+                    <input type="tel" name="Contato" id="iContato" required><br><br>
+                    <label for="iE-Mail">E-Mail</label><br>
+                    <input type="email" name="email" id="iEmail" required><br><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>NOSSOAS SERVIÇOS</legend>
+                    <label for="iservicos">QUAIS SERVIÇOS DESEJA CONTRATAR</label><br>
+                    <label for="ipassagens">
+                        <input type="checkbox" name="passagens" id="ipassagens" value="passagens">PASSAGENS
+                    </label><br>
+                    <label for="ihospedagen">
+                        <input type="checkbox" name="hospedagem" id="ihospedagen" value="hospedagem">HOSPEDAGEM
+                    </label><br>
+                    <label for="ialuguelCarro">
+                        <input type="checkbox" name="aluguelCarro" id="ialuguelCarro" value="aluguelCarro">ALUGUEL DE VEICULOS
+                    </label>
+                </fieldset><br>
+                <fieldset>
+                    <legend>FORMAS DE PAGAMENTO</legend>
+                    <label for="icartao">
+                        <input type="radio" name="formaPagamento" id="icartao" value="cartao">CARTÃO
+                    </label><br>
+                    <label for="iboleto">
+                        <input type="radio" name="formaPagamento" id="iboleto" value="boleto">BOLETO
+                    </label><br>
+                    <label for="ipix">
+                        <input type="radio" name="formaPagamento" id="ipix" value="pix">PIX
+                    </label><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>PRAZOS DE PAGAMENTO</legend>
+                    <select name="prazoPagamentos" id="iprazoPagamento">
+                        <option value="escolha">ESCOLHA UMA OPÇÃO</option>
+                        <option value="aVista">À VISTA</option>
+                        <option value="em5">EM 5 VEZES SEM JUROS</option>
+                        <option value="em10">EM 10 VEZES COM JUROS DE 12%</option>
+                    </select>
+                </fieldset><br>
+                <fieldset>
+                    <legend>DEIXE SEU COMENTARIO</legend>
+                    <textarea name="COMENTARIO" id="icomentario" cols="30" rows="10">comente aqui!!</textarea>
+                </fieldset><br>
+                <input type="submit" value="ENVIAR">
+            </form>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p>
+            <strong>DESENVOLVIDO POR PAULO CÉSAR</strong>
+        </p>
+    </footer>
+    <hr>
+</body>
+</html>
