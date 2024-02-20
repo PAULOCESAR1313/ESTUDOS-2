@@ -7,7 +7,6 @@
 body,html
 {
     width: 100%;
-    
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -64,29 +63,27 @@ h1
 h2
 {
     font-size: 24px;
+    
     font-weight: 600;
     text-transform: uppercase;
     color: #303030;
 }
 
-#pacotes .imagen_conteiner .figura
-{
-    text-align: center;
-}
-
-.imagen_conteiner
+#pacotes .imagens
 {
     display: flex;
-    text-align: center;
-    align-items: center; 
-    background-color: #818181;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.risortes img
+#pacotes .imagens .figura img
 {
-    margin: 4px;
-    padding: 2px;
     width: 400px;
+}
+
+#video .video
+{
+    text-align: center;
 }
 
 table
