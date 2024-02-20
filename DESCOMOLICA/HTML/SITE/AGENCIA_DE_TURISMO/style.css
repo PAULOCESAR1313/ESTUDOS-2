@@ -50,7 +50,7 @@ nav li
 
 section, footer
 {
-    margin: 40px;
+    margin: 20px;
 }
 
 h1
@@ -69,11 +69,24 @@ h2
     color: #303030;
 }
 
-.risortes
+#pacotes .imagen_conteiner .figura
 {
-    display: inline;
-    width: 300px;
-    height: 300px;
+    text-align: center;
+}
+
+.imagen_conteiner
+{
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    background-color: #818181;
+}
+
+.risortes img
+{
+    margin: 4px;
+    padding: 2px;
+    width: 400px;
 }
 
 table
