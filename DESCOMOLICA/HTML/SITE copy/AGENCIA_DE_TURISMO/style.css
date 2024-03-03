@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body,html
+/*body,html
 {
     width: 100%;
     font-weight: 400;
@@ -13,13 +13,14 @@ body,html
     line-height: 2.2em;
     color: #818181;
 }
+*/
 
-header
+header, footer
 {   
     background-color: #f4511e;
 }
 
-nav
+nav 
 {
     padding: 5px;
     height: 50px;
@@ -27,31 +28,12 @@ nav
     letter-spacing: 4px;
     background-color: #f4511e;
 }
-
-nav li a
-{
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    color: #dacfcf;
-}
-
-nav ul
-{
-    float: right;
-    list-style: none;
-}
-
-nav li
-{
-    float: left;
-}
-
+/*
 section, footer
 {
     margin: 20px;
 }
-
+*/
 h1
 {
     padding: 26px;
@@ -69,14 +51,19 @@ h2
     color: #303030;
 }
 
-#pacotes .imagens
+p
+{
+    text-align: justify;
+}
+
+.row
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#pacotes .imagens .figura img
+img
 {
     width: 400px;
 }
@@ -84,6 +71,11 @@ h2
 #video .video
 {
     text-align: center;
+}
+
+.conteiner-fluid
+{
+    background-color: #f4511e;
 }
 
 table
@@ -109,6 +101,6 @@ table tr:nth-child(odd)
 
 table thead th
 {
-    color: #dacfcf;
-    background-color: #f4511e;
+    color: #484747;
+    background-color: #f8f6f5;
 }
