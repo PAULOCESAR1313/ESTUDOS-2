@@ -42,7 +42,7 @@
             Venha realizar a viajem dos seus sonhos!!
         </h1>
     </header>
-    <section class="container-fluid bg-light text-center">
+    <section class="container-fluid bg-light text-center p-4">
         <h2>
             Conheça os nossos pacotes!!
         </h2>
@@ -83,7 +83,7 @@
             </div><!--imagen_conteiner-->
     </section>
     <section id="video">
-        <div class="video">
+        <div class="video p-4">
             <video controls width="400px">
                 <source src="/SITE/AGENCIA_DE_TURISMO/VIDEOS/3313_rain_raining_rain_drops_Raindrops_Videvo.mp4" type="video/mp4">
                 <source src="" type="video/webn">
@@ -91,18 +91,18 @@
             </video>
         </div>
     </section>
-    <section class="conteiner-fluid">
-        <h2>
+    <section class="conteiner-fluid p-4">
+        <h2 class="text-center">
             TAXAS E SEVIÇOS
         </h2>
         <p>
             Veja nossas taxas e seviços!!
         </p>
-        <table>
-            <caption>
+        <table class="table table-bordered table-striped table-hover border-warning">
+            <caption class="text-center">
                 DESCRIÇÃO DOS SERVIÇOS E SEUS RESPECTIVOS VALORES
             </caption>
-            <thead>
+            <thead class="table-secondary text-xl-center">
                 <tr>
                     <th>
                         SERVIÇO
@@ -112,12 +112,12 @@
                     </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-group-divider">
                 <tr>
                     <td>
                         RESERVA DE HOTEL
                     </td>
-                    <td>
+                    <td class="text-center">
                         R$ 500,00
                     </td>
                 </tr>
@@ -125,7 +125,7 @@
                     <td>
                         COMPRA DE PASSAGENS
                     </td>
-                    <td>
+                    <td class="text-center">
                         R$ 100,00
                     </td>
                 </tr>
@@ -133,7 +133,7 @@
                     <td>
                         ALUGUEL DE CARROS
                     </td>
-                    <td>
+                    <td class="text-center">
                         R$ 50,00
                     </td>
                 </tr>
@@ -143,83 +143,82 @@
                     <td>
                         PACEIO DE LANCHA
                     </td>
-                    <td>
+                    <td class="text-center">
                         R$ 300,00
                     </td>
                 </tr>
             </tfoot>
         </table>
     </section>
-    <section class="conteiner-fluid bg-light">
-        <h2>
+    <section class="conteiner-fluid bg-light p-4">
+        <h2 class="text-center">
             ORÇAMENTO
         </h2>
         <div class="conteiner_form">
             <form action="" method="get">
                 <fieldset>
                     <legend>DADOS PESSOAIS</legend>
-                    <label for="iNome">Nome</label><br>
-                    <input type="text" name="Nome" id="iNome" required><br><br>
-                    <label for="iContato">Celular</label><br>
-                    <input type="tel" name="Contato" id="iContato" required><br><br>
-                    <label for="iE-Mail">E-Mail</label><br>
-                    <input type="email" name="email" id="iEmail" required><br><br>
+                    <div class="mb-3">
+                        <label for="iNome" class="form-label">Nome</label>
+                        <input type="text" name="Nome" id="iNome" required class="form-control">
+                    </div>
+                    <div class="mg-3">
+                        <label for="iContato" class="form-label">Celular</label>
+                        <input type="tel" name="Contato" id="iContato" required class="form-control">
+                    </div>
+                    <div  class="mb-3">
+                        <label for="iE-Mail" class="form-label">E-Mail</label>
+                        <input type="email" name="email" id="iEmail" required class="form-control">
+                    </div>
                 </fieldset><br>
                 <fieldset>
                     <legend>DADOS ADICIONAIS</legend>
-                    <label for="idataIda">DATA DA IDA</label><br>
-                    <input type="date" name="dataIda" id="IdataIda"><br><br>
-                    <label for="idataVolta">DATA DA VOLTA</label><br>
-                    <input type="date" name="dataVolta" id="idataVolta"><br><br>
-                    <label for="iqtPessoal">QUANTIDADE DE PESSOAS</label><br>
-                    <input type="number" name="qtPessoas" id="iqtPessoas"><br>
+                    <div class="mb-3">
+                        <label for="idataIda" class="form-label">DATA DA IDA</label>
+                        <input type="date" name="dataIda" id="IdataIda" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="idataVolta" class="form-label">DATA DA VOLTA</label>
+                        <input type="date" name="dataVolta" id="idataVolta" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="iqtPessoal" class="form-label">QUANTIDADE DE PESSOAS</label>
+                        <input type="number" name="qtPessoas" id="iqtPessoas" class="form-control">
+                    </div>
                 </fieldset><br>
                 <fieldset>
                     <legend>NOSSOAS SERVIÇOS</legend>
                     <label for="iservicos">QUAIS SERVIÇOS DESEJA CONTRATAR</label><br>
-                    <label for="ipassagens">
-                        <input type="checkbox" name="passagens" id="ipassagens" value="passagens">PASSAGENS
-                    </label><br>
-                    <label for="ihospedagen">
-                        <input type="checkbox" name="hospedagem" id="ihospedagen" value="hospedagem">HOSPEDAGEM
-                    </label><br>
-                    <label for="ialuguelCarro">
-                        <input type="checkbox" name="aluguelCarro" id="ialuguelCarro" value="aluguelCarro">ALUGUEL DE VEICULOS
-                    </label>
-                </fieldset><br>
-                <fieldset>
-                    <legend>FORMAS DE PAGAMENTO</legend>
-                    <label for="icartao">
-                        <input type="radio" name="formaPagamento" id="icartao" value="cartao">CARTÃO
-                    </label><br>
-                    <label for="iboleto">
-                        <input type="radio" name="formaPagamento" id="iboleto" value="boleto">BOLETO
-                    </label><br>
-                    <label for="ipix">
-                        <input type="radio" name="formaPagamento" id="ipix" value="pix">PIX
-                    </label><br>
-                </fieldset><br>
-                <fieldset>
-                    <legend>PRAZOS DE PAGAMENTO</legend>
-                    <select name="prazoPagamentos" id="iprazoPagamento">
-                        <option value="escolha">ESCOLHA UMA OPÇÃO</option>
-                        <option value="aVista">À VISTA</option>
-                        <option value="em5">EM 5 VEZES SEM JUROS</option>
-                        <option value="em10">EM 10 VEZES COM JUROS DE 12%</option>
-                    </select>
+                    <div class="form-check">
+                        <label for="ipassagens" class="form-check-label">
+                            <input type="checkbox" name="passagens" id="ipassagens" value="passagens" class="form-check-input">PASSAGENS
+                        </label><br>
+                    </div>
+                    <div class="form-check">
+                        <label for="ihospedagen" class="form-check-label">
+                            <input type="checkbox" name="hospedagem" id="ihospedagen" value="hospedagem" class="form-check-input">HOSPEDAGEM
+                        </label><br>
+                    </div>
+                    <div class="form-check">
+                        <label for="ialuguelCarro" class="form-check-label">
+                            <input type="checkbox" name="aluguelCarro" id="ialuguelCarro" value="aluguelCarro" class="form-check-input">ALUGUEL DE VEICULOS
+                        </label>
+                    </div>
                 </fieldset><br>
                 <fieldset>
                     <legend>DEIXE SEU COMENTARIO</legend>
                     <textarea name="COMENTARIO" id="icomentario" cols="30" rows="10">comente aqui!!</textarea>
                 </fieldset><br>
-                <input type="submit" value="ENVIAR">
+                <button class="btn-secundary">SALVAR</button>
             </form>
         </div>
     </section>
-    <footer class="container-fluid">
-        <p>
-            <strong>DESENVOLVIDO POR WEBCRIATIVA</strong>
-        </p>
+    <footer class="container-fluid p-2">
+        <div class="alinha">
+            <p>
+                <strong>DESENVOLVIDO POR WEBCRIATIVA</strong>
+            </p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

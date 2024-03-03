@@ -78,6 +78,7 @@ img
     background-color: #f4511e;
 }
 
+/*
 table
 {
     width: 100%;
@@ -103,4 +104,17 @@ table thead th
 {
     color: #484747;
     background-color: #f8f6f5;
+}
+*/
+
+button
+{
+    width: 80px;
+}
+
+.alinha
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
