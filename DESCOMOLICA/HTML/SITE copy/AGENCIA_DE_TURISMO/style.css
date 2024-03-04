@@ -28,6 +28,7 @@ nav
     letter-spacing: 4px;
     background-color: #f4511e;
 }
+
 /*
 section, footer
 {
@@ -117,4 +118,29 @@ button
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.carousel-caption h5
+{
+    font-size: 80px;
+    color: #f4511e;
+    text-shadow: 2px 2px 2px black;
+}
+
+.carousel-caption p
+{
+    font-size: 28px;
+    color: #f4511e;
+    text-shadow: 2px 2px 2px black;
+}
+
+.card-body
+{
+    color: white;
+    background-color: #f4511e;
+}
+
+.modal-footer .btn
+{
+    width: 600px;
 }
