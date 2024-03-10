@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANIPULANDO O DOM AULA 05</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>PRODUTOS</li>
+    </ul>
+</body>
+<SCRIPt>
+    var elemento = document.createElement("div");
+    elemento.innerText = "Criei uma dive dinamicamente";
+    elemento.style.color = "red";
+    elemento.style.backgroundColor = "black";
+    document.body.append(elemento);
+
+    var lista = document.getElementById("lista");
+    var li = document.createElement("li");
+    li.textContent = "QUEM SOMOS";
+    lista.appendChild(li);
+</SCRIPt>
+</html>
