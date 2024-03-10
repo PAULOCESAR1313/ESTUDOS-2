@@ -4,8 +4,8 @@ function avaliarPessoa(nome, sobrenome, a, p)
     {
         nome,
         sobrenome,
-        altura: a,
-        peso: p,
+        altura = a,
+        peso = p,
         calculoImc()
         {
             const indice = this.peso / (this.altura ** 2).toFixed(1)
