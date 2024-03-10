@@ -6,7 +6,7 @@ function avaliarPessoa(nome, sobrenome, a, p)
         sobrenome,
         altura = a,
         peso = p,
-        calculoImc()
+        calculoImc();
         {
             const indice = this.peso / (this.altura ** 2).toFixed(1)
             if(indice < 18.5)
@@ -39,4 +39,4 @@ function avaliarPessoa(nome, sobrenome, a, p)
 
 const p1 = avaliarPessoa('Paulo Césa', 'Pereira da Silva',1.68,78);
 console.log(p1);
-p1.calculoImc();
+p1.calculoImc;
