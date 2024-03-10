@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANIPULANDO O DOM AULA 09</title>
+</head>
+<body>
+    <form nome ="formCadastro" onsubmit="validarFormulario()">
+        <label for="iemail">Email</label>
+        <input type="email" name="email" id="iemail"> <br><br>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome"><br><br>
+
+        <button type="submit" onclick="novoIntem()">CADASTRAR</button>
+    </form>
+</body>
+<script>
+    function validarFormulario()
+    {
+        //var campoEmail = document.forms["formCadastro"]["email"].value;
+        var compoNome = document.forms["formCadastro"]["nome"].value;
+        if(compoNome == "")
+        {
+            alert("Digite seu nome e um Email valido!");
+            event.preventDefault();
+        }
+        else
+        {
+            alert("Como Vai? " + compoNome);
+            event.preventDefault();
+        }
+    }
+</script>
+</html>

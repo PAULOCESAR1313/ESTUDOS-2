@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANIPULANDO O DOM AULA 06</title>
+</head>
+<body>
+    <ul class="listatimes">
+
+    </ul>
+</body>
+<script>
+    times = ["Flamengo", "Vasco","Gremio", "Bota Fogo"];
+
+    var listaDeTimes = document.querySelector('ul.listatimes');
+
+    for(var i = 0; i < times.length; i++)
+    {
+        var time = times[i];
+        var listeItem = document.createElement('li');
+        listeItem.innerText = time;
+        listeItem.style.width = "200px";
+        listeItem.style.listStyle = "none";
+        listeItem.style.border = "2px solid blue";
+        listaDeTimes.appendChild(listeItem);
+    }
+</script>
+</html>
