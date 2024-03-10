@@ -40,17 +40,21 @@ console.log(p2);
 //03.1º Forma de criar objeto
 console.log("3.1 - Usando função");
 
-function criarPessoa(nome, sobrenome)
+function criarPessoas(nome, sobrenome)
 {
     return 
     {
-        nome, sobrenome,
-        get nomeCompleto()
+        nome,
+        sobrenome,
+        nomeCompleto()
         {
             return `${this.nome} ${this.sobrenome}`
         }
     }
 }
 
-const p3 = criarPessoa('Joaqui ', 'Silva Pereira');
-const p4 = criarPessoa('Cristofer ', 'Silva Pereira');
+const p3 = criarPessoas('Joaqui ', 'Silva Pereira');
+const p4 = criarPessoas('Cristofer ', 'Silva Pereira');
+
+console.log(p3.nomeCompleto());
+console.log(p4.nomeCompleto());
